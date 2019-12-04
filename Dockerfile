@@ -11,7 +11,8 @@ ENV PATH /usr/app/node_modules/.bin:$PATH
 # Using the native module loading strategy
 # /usr/app holds node_modules (with package.json to install)
 # /usr/app/src holds the app code
-COPY package*.json /usr/app
+COPY package.json /usr/app
+COPY package-lock.json /usr/app
 RUN npm install
 
 WORKDIR /usr/app/src
