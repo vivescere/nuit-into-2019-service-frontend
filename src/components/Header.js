@@ -47,6 +47,7 @@ class Header extends Component {
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <Link className="nav-link mt-2" to="/">Home</Link>
                         <a href="/wiki.html" class="nav-link mt-2">Wiki</a>
+                        <a href="http://51.83.255.158:8000" class="nav-link mt-2">About</a>
                         {loginOrOut}
                     </div>
 
