@@ -1,0 +1,101 @@
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="wiki.css">
+		<title>Nom_du_site_WIKI</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Roboto&display=swap" rel="stylesheet"> <nav class="navbar navbar-light bg-light navbar-expand-lg">
+			<img alt="img" width="70" src="logo.svg" class="navbar-brand">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link nav-item" href="#">Index</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-item" href="#">Login</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-item" href="#">Logout</a>
+					</li>
+				</ul>
+				<center><ul class="navbar-nav mr-auto">
+					<form class="form-inline" action="moteur.php" method="post">
+						<li><input name="search" placeholder="Recherche ..." class="form-control mr-sm-2" type="text"></li>
+						<li><button class="btn btn-info" type="submit">Rechercher</button></li>
+					</form>
+				</ul></center>
+			</div>
+		</nav>
+
+
+		<div class="container">
+			<div class="row"><div class="col">
+				<a href="contraste.php" class="btn btn-primary">Normal</a>
+			</div></div>
+			<div class="row"><div class="col">
+				<a href="contraste.php" class="btn btn-primary">Contrasté</a>
+			</div></div>
+			<div class="row"><div class="col">
+				<a href="contraste.php" class="btn btn-primary">Noir et blanc</a>
+			</div></div>
+
+
+			<div class="row justify-content-center">
+				<div class="col-auto"><h1>Bienvenue dans le Wiki</h1></div>
+			</div>
+			<div class="row">
+				<div class="col form">
+					<form action="#" method="post">
+						Rechercher sur le Wiki
+						<input class="form-control" type="text" id="site-search" name="search"
+						aria-label="Search through site content" placeholder="Rechercher">
+						<button class="form-control" type="submit">Rechercher</button>
+					</form>
+				</div>
+			</div>
+			<a class="btn btn-primary" type="button" data-toggle="collapse" href="#traite" role="button" data-target="#traite" aria-expanded="false" aria-controls="traite">
+				Liste des sujets déjà traités
+			</a>
+			<div class="collapse" id="traite">
+				<div class="card card-body">
+					blabla
+				</div>
+			</div> 
+			<a class="btn btn-primary" type="button" data-toggle="collapse" href="#enCour" data-target="#enCour" aria-expanded="false" aria-controls="enCour">
+				Liste des sujets en cours
+			</a>
+			<div class="collapse" id="enCour">
+				<div class="card card-body">
+					lorem
+				</div>
+			</div>
+			
+			<a class="btn btn-primary" type="button" data-toggle="collapse" href="#nouveau" role="button" data-target="#nouveau" aria-expanded="false" aria-controls="nouveau">
+				Nouveau sujet
+			</a>
+			<div class="collapse" id="nouveau">
+				<div class="card card-body">
+					<form method="POST" action="BDD.php">
+						<label> Titre :</label>
+						<input class="form-control" id="Titre" type="text" name="Titre" placeholder="Titre">
+						<label> Tag :</label>
+						<input class="form-control" id="Tag" type="text" name="Tag" placeholder="Tag">
+						<label> Texte :</label>
+						<input class="form-control" id="Texte" type="text" name="Texte" placeholder="Texte">
+						<input class="btn btn-primary" type="submit" aria-expanded="false" value="Créer un Post">
+					</form>
+				</div>
+			</div> 
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body></html>

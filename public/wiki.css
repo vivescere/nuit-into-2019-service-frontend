@@ -1,0 +1,112 @@
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
+
+	font-family: 'Roboto', sans-serif;
+
+	font-family: 'Quicksand', sans-serif;
+}
+
+.btn-primary
+{
+	width: 100%;
+	padding: 1rem;
+	color: white !important;
+	background-color: #56246f;
+}
+
+.btn-primary
+{
+	background-color: #56246f;
+	border-color: unset;
+}
+
+.btn-primary:hover
+{
+	background-color: #bd6fe4;
+	border-color: unset;
+}
+
+.btn-primary:active
+{
+	background-color: #bd6fe4 !important;
+}
+
+.btn-primary:selected
+{
+	background-color: #bd6fe4 !important;
+}
+
+.btn-primary:visited
+{
+	background-color: #bd6fe4 !important;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+	color: white;
+	background-color: 
+	#bd6fe4;
+	border-color:
+	unset;
+	box-shadow: unset;
+}
+
+.form
+{
+	margin-bottom: 2rem;
+}
+
+div div .form-control
+{
+	margin-bottom: 2rem;
+}
+
+.bg-light
+{
+	background-color: #56246f
+	!important;
+}
+
+.nav-item:hover
+{
+	color: #e6d4f3 !important;
+}
+
+.nav-item
+{
+	color: #bd6fe4 !important
+}
+
+.btn-info
+{
+	background-color: #7B1FA2;
+}
+
+.btn-info:hover
+{
+	background-color: #56246f;
+}
+
+button
+{	
+	background-color: #7B1FA2 !important;
+	color: white !important;
+}
+
+button:hover
+{	
+	background-color: #56246f !important;
+	color: white !important;
+}
+
+a:visited
+{
+	background-color: #56246f !important;
+}
+
+
+h1
+{
+	margin-left: 20rem;
+}

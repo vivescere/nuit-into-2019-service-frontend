@@ -15,6 +15,7 @@ import { loginAction } from '../actions/authActions';
 import Landing from './Landing';
 import Login from './Login';
 import Logout from './Logout';
+import Header from './Header';
 
 /* 
  * mapDispatchToProps
@@ -40,15 +41,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <pre>{JSON.stringify(this.props)}</pre>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>{loginOrOut}</li>
-            </ul>
-          </nav>
+          <Header />
 
           <Switch>
             <Route path="/login">
@@ -61,6 +54,8 @@ class App extends Component {
               <Landing />
             </Route>
           </Switch>
+
+          
         </Router>
       </div>
     );
