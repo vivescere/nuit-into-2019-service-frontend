@@ -14,6 +14,7 @@ import { loginAction } from '../actions/authActions';
 
 import Landing from './Landing';
 import Login from './Login';
+import Logout from './Logout';
 
 /* 
  * mapDispatchToProps
@@ -32,6 +33,10 @@ const mapStateToProps = state => ({
 
 class App extends Component {
   render() {
+    const isLoggedIn = this.props.authReducer.connected;
+
+    let loginOrOut = (isLoggedIn) ? (<Link to="/logout">Logout</Link>) : (<Link to="/login">Login</Link>);
+
     return (
       <div className="App">
         <Router>
@@ -41,15 +46,16 @@ class App extends Component {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>
-                <Link to="/login">Login</Link>
-              </li>
+              <li>{loginOrOut}</li>
             </ul>
           </nav>
 
           <Switch>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/logout">
+              <Logout />
             </Route>
             <Route path="/">
               <Landing />
